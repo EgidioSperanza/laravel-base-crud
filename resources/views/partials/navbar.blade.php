@@ -1,7 +1,7 @@
 @php
 $links=[
 'characters'=>'characters',
-'comics'=>'comics',
+'comics.index'=>'comics',
 'movies'=>'movies',
 'tv'=>'tv',
 'games'=>'games',

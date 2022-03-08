@@ -1,13 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-a:link,
-a:visited {
+a:link:not(.more-comics),
+a:visited:not(.more-comics){
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
+a:hover:not(.more-comics) {
   color: $primary-link-color;
   text-decoration: none;
 }
@@ -26,4 +26,12 @@ main {
 
 .box {
   margin: 200px 0;
+}
+
+.add_form{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $primary-link-color;
+  padding:20px;
+  border-radius: 5px;
 }

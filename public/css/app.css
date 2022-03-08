@@ -21579,13 +21579,26 @@ nav input:focus {
   text-transform: uppercase;
 }
 
-.more-comics {
+a.more-comics:link,
+a.more-comics:visited {
   margin: 0 auto;
   padding: 10px 40px;
   background-color: #0282f9;
+  color: #FFF;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 900;
+  text-decoration: none;
+}
+
+a.more-comics:hover {
+  color: #0282f9;
+  background-color: #889595;
+  text-decoration: none;
+}
+
+li.price {
+  width: 60px;
 }
 
 .shop {
@@ -21707,13 +21720,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a:link,
-a:visited {
+a:link:not(.more-comics),
+a:visited:not(.more-comics) {
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
+a:hover:not(.more-comics) {
   color: #0282f9;
   text-decoration: none;
 }
@@ -21733,5 +21746,13 @@ main {
 
 .box {
   margin: 200px 0;
+}
+
+.add_form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #0282f9;
+  padding: 20px;
+  border-radius: 5px;
 }
 

@@ -1,0 +1,40 @@
+.nav-link {
+  text-transform: uppercase;
+  color: #000 !important;
+}
+.nav-link:hover, .nav-link.active {
+  color: $primary-link-color !important;
+}
+.nav-link:hover:not(.dropdown-toggle),.nav-link.active {
+  position: relative !important;
+}
+.nav-link:hover:not(.dropdown-toggle)::before,
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -44px;
+  height: 6px;
+  background-color: $primary-link-color;
+}
+nav form {
+  border-bottom: 2px solid $primary-link-color;
+  padding: 2px;
+}
+nav input {
+  border: none;
+  box-shadow: none;
+  text-align: right;
+  font-size: 16px;
+  max-width: 80px;
+}
+nav input:focus {
+  outline: none;
+}
+
+.custom-btn {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}

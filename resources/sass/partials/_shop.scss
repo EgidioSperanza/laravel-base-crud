@@ -1,0 +1,30 @@
+.shop {
+  background-color: $primary-link-color;
+  color: #fff;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+}
+.shop > .container {
+  height: 100%;
+}
+.img-shop {
+  height: 60px;
+  width: 60px;
+}
+.img-shop > img:not(.visa-card) {
+  height: 100%;
+  object-fit: contain;
+}
+.img-shop > img.visa-card {
+  width: 100%;
+  object-fit: cover;
+}
+.shop-el {
+  height: 150px;
+  cursor: pointer;
+}
+.shop-el:hover {
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}

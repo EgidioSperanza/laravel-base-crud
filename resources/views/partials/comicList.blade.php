@@ -8,7 +8,8 @@
           <img class="img-fluid" src="{{$comic['thumb']}}" alt="Cover by{{$comic['series']}}" />
         </div>
         <div class="card-body">
-          <p class="card-title">{{$comic['series']}}</p>
+          <a href="{{ route('comics.show', $comic->id) }}" class="more-comics card-link mt-3">Dettagli</a>
+          <p class="card-title mt-3">{{$comic['series']}}</p>
         </div>
       </div>
     </div>

@@ -21607,6 +21607,10 @@ a.btn-link {
   text-decoration: none;
 }
 
+.show {
+  border-radius: 20px;
+}
+
 .shop {
   background-color: #0282f9;
   color: #fff;
@@ -21724,17 +21728,6 @@ a.signin:hover {
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-a:link:not(.more-comics, .btn-link),
-a:visited:not(.more-comics, .btn-link) {
-  color: #000;
-  text-decoration: none;
-}
-
-a:hover:not(.more-comics, .btn-link) {
-  color: #0282f9;
-  text-decoration: none;
 }
 
 ul {

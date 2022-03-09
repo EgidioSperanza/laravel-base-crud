@@ -38,11 +38,7 @@
     <div class="d-flex justify-content-end">
         <button class="btn btn-secondary me-3"><a class="btn-link" href="{{ route('comics.show', $comic->id) }}">Annulla Modifica</a></button>
         <button class="btn btn-success me-3" type="submit">Modifica Record</button>
-        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="row g-3 add_form">
-            @csrf
-            @method('DELETE')
-            <button class="btn btn-danger" type="submit">Elimina Record</button>
-        </form>
-    </div>
-</form>
+    </form>
+    @include ('partials.destroybtn')
+</div>
 @endsection

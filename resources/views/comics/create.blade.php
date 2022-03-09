@@ -35,6 +35,7 @@
         <textarea class="form-control" name="description" id="description" aria-describedby="helpId" placeholder="Description"></textarea>
     </div>
     <div class="d-flex justify-content-end">
+        @include('partials.return', ['routeTarget'=>'comics.index'])
         <button class="btn btn-secondary me-3" type="reset">Indietro</button>
         <button class="btn btn-success" type="submit">Crea Record</button>
       </div></form>

@@ -3,7 +3,7 @@
 @section('pageTitle', 'Comics')
 
 @section('main')
-<div class="container bg-dark p-5 rounded-4">
+<div class="container show bg-dark p-5">
     <h1>{{ $comic->title }}</h1>
     <div class="d-flex justify-content-center pt-5">
         <img src="{{ $comic->thumb }}" alt="Cover {{$comic->title}}">
@@ -16,12 +16,9 @@
     </div>
     <p class="container mt-5 mb-5 text-start">{{$comic->description}}</p>
     <div class="d-flex justify-content-end">
+        @include('partials.return', ['routeTarget'=>'comics.index'])
         <button class="btn btn-primary me-3"><a class="btn-link" href="{{ route('comics.edit', $comic->id) }}">Modifica</a></button>
-        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
-            @csrf
-            @method('DELETE')
-            <button class="btn btn-danger" type="submit">Elimina Record</button>
-        </form>
+        @include('partials.destroybtn')
     </div>
 </div>
 @endsection

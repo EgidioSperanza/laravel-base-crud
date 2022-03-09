@@ -14,7 +14,8 @@
                 <li class="badge rounded-pill bg-success price">{{ $comic->price }}</li>
             </ul>
         </div>
-        <p class="container mt-5 text-start">{{$comic->description}}</p>
-</div>
+        <p class="container mt-5 mb-5 text-start">{{$comic->description}}</p>
+        <a href="{{ route('comics.edit', $comic->id) }}" class="more-comics">Modifica</a>
+    </div>
 @endsection
 

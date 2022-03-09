@@ -16,4 +16,4 @@
     @endforeach
   </div>
 </div>
-  <a href="{{ route('comics.create') }}" class="more-comics">Aggiungi</a>
+  <a href="{{ route('comics.create', $comic->id) }}" class="more-comics">Aggiungi</a>

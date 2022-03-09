@@ -3,7 +3,8 @@
 @section('pageTitle', 'Comics')
 
 @section('main')
-<form action="{{ route('comics.store') }}" method="post" class="row g-3 add_form">
+<h1>Aggiungi un fumetto</h1>
+<form action="{{ route('comics.store') }}" method="POST" class="row g-3 add_form">
     @csrf
     <div class="mb-3">
         <label for="title" class="form-label">Titolo</label>

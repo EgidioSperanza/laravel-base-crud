@@ -12,7 +12,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Vuoi eliminare questo contenuto? non potrai più recuperarlo.</p>
+          <p>Vuoi eliminare questo contenuto? Non potrai più recuperarlo.</p>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button> 

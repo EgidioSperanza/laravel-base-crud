@@ -21602,6 +21602,11 @@ li.price {
   font-size: 20px;
 }
 
+a.btn-link {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .shop {
   background-color: #0282f9;
   color: #fff;
@@ -21721,13 +21726,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a:link:not(.more-comics),
-a:visited:not(.more-comics) {
+a:link:not(.more-comics, .btn-link),
+a:visited:not(.more-comics, .btn-link) {
   color: #000;
   text-decoration: none;
 }
 
-a:hover:not(.more-comics) {
+a:hover:not(.more-comics, .btn-link) {
   color: #0282f9;
   text-decoration: none;
 }

@@ -16,4 +16,8 @@
     @endforeach
   </div>
 </div>
+@if (isset($comic->id))
   <a href="{{ route('comics.create', $comic->id) }}" class="more-comics">Aggiungi</a>
+@else
+<a href="{{ route('comics.create', 1) }}" class="more-comics">Aggiungi</a>
+  @endif

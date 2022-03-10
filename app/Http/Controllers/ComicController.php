@@ -87,9 +87,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(ComicStoreRequest $request, Comic $comic)
     {
-        $data=$request->all();
+        $data=$request->validated();
 
         $comic->update($data);
 

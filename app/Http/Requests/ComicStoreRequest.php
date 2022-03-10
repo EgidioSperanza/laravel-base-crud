@@ -29,7 +29,7 @@ class ComicStoreRequest extends FormRequest
             'thumb' => 'nullable|url',
             'price' => 'required|numeric',
             'series' => 'required|min:5',
-            'sale_date' => 'required|date_format:Y/m/d',
+            'sale_date' => 'required|date_format:Y-m-d',
             'type' => 'required|min:5',
         ];
     }

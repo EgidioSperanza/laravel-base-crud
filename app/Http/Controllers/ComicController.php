@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comic;
+use App\Http\Requests\ComicStoreRequest;
 use Illuminate\Http\Request;
 
 class ComicController extends Controller
@@ -34,9 +35,10 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ComicStoreRequest $request)
     {
-        $data = $request->all();
+
+        $data = $request->validated();
 
         $newComic = new Comic();
         $newComic->fill($data);//Key db === key class need fillable in Comic class

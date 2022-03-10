@@ -3,6 +3,9 @@
 @section('pageTitle', 'Comics')
 
 @section('main')
+@if($errors->any())
+    @dump($errors->all())
+@endif
 <h1>Aggiungi un fumetto</h1>
 <form action="{{ route('comics.store') }}" method="POST" class="row g-3 add_form">
     @csrf
